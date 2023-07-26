@@ -1,0 +1,1 @@
+return { "ghdl_ls" }
