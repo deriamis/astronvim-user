@@ -7,9 +7,9 @@ return {
     --
     -- nvim-cmp integration
     --
-    local cmp, cmp_ok = pcall(require, "cmp")
+    local cmp_ok, cmp = pcall(require, "cmp")
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-    local ts_utils, ts_utils_ok = pcall(require, "nvim-treesitter.ts_utils")
+    local ts_utils_ok, ts_utils = pcall(require, "nvim-treesitter.ts_utils")
 
     if cmp_ok and ts_utils_ok then
       local ts_node_func_parens_disabled = {
