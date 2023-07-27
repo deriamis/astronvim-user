@@ -37,6 +37,7 @@ return {
         diagnostics_enabled = true,    -- enable diagnostics at start
         status_diagnostics_enabled = true, -- enable diagnostics in statusline
         icons_enabled = true,          -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
+        resession_enabled = true,      -- Use resession over neovim-session-manager
         neovide_theme = "dark",
         neovide_transparency = 0.0,
         neovide_background_color = "#171717" .. string.format("%x", 255 * 0.95),
