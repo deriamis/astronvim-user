@@ -55,18 +55,19 @@ return {
     opts.sources = cmp.config.sources {
       { name = "nvim_lsp", priority = 1000 },
       { name = "luasnip", priority = 750 },
-      { name = "buffer",
-        priority = 500,
-        option = {
-          get_bufnrs = function()
-            local bufs = {}
-            for _, win in ipairs(vim.api.nvim_list_wins()) do
-              bufs[vim.api.nvim_win_get_buf(win)] = true
-            end
-            return vim.tbl_keys(bufs)
-          end
-        }
-      },
+-- This gets irritating very quickly
+--       { name = "buffer",
+--         priority = 500,
+--         option = {
+--           get_bufnrs = function()
+--             local bufs = {}
+--             for _, win in ipairs(vim.api.nvim_list_wins()) do
+--               bufs[vim.api.nvim_win_get_buf(win)] = true
+--             end
+--             return vim.tbl_keys(bufs)
+--           end
+--         }
+--       },
       { name = "path", priority = 250 },
     }
     opts.sorting = {
