@@ -7,8 +7,8 @@ return {
             "docker_compose_language_service", "dockerls", "elixirls",
             "erlangls", "fortls", "gopls", "hls", "html", "jdtls", "jsonls",
             "lemminx", "ltex", "lua_ls", "ocamllsp", "omnisharp",
-            "perlnavigator", "phpactor", "pyright", "ruby_ls", "rust_analyzer",
-            "salt_ls", "sqlls", "svlangserver", "vimls", "yamlls"
+            "perlnavigator", "phpactor", "pyright", "rust_analyzer", "salt_ls",
+            "solargraph", "sqlls", "svlangserver", "vimls", "yamlls"
         }
-    }
+    },
 }
